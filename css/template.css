@@ -1,0 +1,485 @@
+body {
+    color: #7c8595;
+    font-family: 'Barlow', sans-serif;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+a {
+    color: #2880af;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus,
+button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+img {
+    max-width: 100%;
+}
+
+input,
+textarea,
+select {
+    color: inherit;
+}
+
+input,
+textarea {
+    padding: 5px 10px;
+}
+
+input[type="submit"] {
+    border: none !important;
+}
+
+textarea {
+    height: 120px;
+}
+
+.btn {
+    border-radius: 15px;
+    border: none;
+    font-size: 18px;
+    overflow: hidden;
+    padding: 5px 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-white {
+    background: #fff;
+    border-bottom: 3px solid #cfcfcf;
+    color: #04579d !important;
+}
+
+.btn-green {
+    background: #2bcda8;
+    background: linear-gradient(to bottom, #2bcda8 0%, #a1dd9d 100%) !important;
+    border-bottom: 3px solid rgba(0, 0, 0, .3);
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+}
+
+.btn-green:hover {
+    color: #fff;
+}
+
+.bigger-p {
+    font-size: 1.12rem;
+}
+
+.row-100 {
+    padding: 0 15px;
+}
+
+.wing-title {
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.wing-title strong {
+    background: #3695b6;
+    color: #fff;
+    display: inline-block;
+    padding: 5px 15px;
+    position: relative;
+}
+
+.wing-title strong:before,
+.wing-title strong:after {
+    background: url("../design/wings-icon.png") no-repeat;
+    content: "";
+    display: block;
+    position: absolute;
+    top: -5px;
+    width: 48px;
+    height: 38px;
+}
+
+.wing-title-white strong {
+    background: #fff;
+    color: #333;
+}
+
+.wing-title-teal strong {
+    background: #2bcda8;
+}
+
+.wing-title strong:before {
+    left: -40px;
+}
+
+.wing-title strong:after {
+    right: -40px;
+}
+
+.wing-title-blue strong:before {
+    background-position: 0 0
+}
+
+.wing-title-blue strong:after {
+    background-position: -48px 0
+}
+
+.wing-title-white strong:before {
+    background-position: 0 -38px
+}
+
+.wing-title-white strong:after {
+    background-position: -48px -38px
+}
+
+.wing-title-teal strong:before {
+    background-position: 0 -76px
+}
+
+.wing-title-teal strong:after {
+    background-position: -48px -76px
+}
+
+.block-title {
+    color: #585c63;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+header {
+    background: url("../design/hero-bg.jpg") no-repeat top center fixed;
+    padding-top: 100px;
+    position: relative;
+}
+
+
+
+.tbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.tbar a {
+    color: #fff;
+}
+
+.contacts {
+    background: rgba(0, 0, 0, .6);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contacts p {
+    margin: 5px 0 0 0;
+}
+
+.contacts a {
+    margin-right: 12px;
+    transition: .4s;
+}
+
+.contacts a:hover {
+    color: #3f9dba;
+}
+
+.contacts a .fas {
+    margin-right: 4px;
+}
+
+.tmenu {
+    background: rgba(0, 0, 0, .3);
+    position: relative;
+}
+
+.tmenu-fixed {
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .15);
+}
+
+.tbar .tmenu-fixed a {
+    color: #333;
+}
+
+.tmenu:before,
+.tmenu:after {
+    content: "";
+    display: block;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.tmenu:before {
+    background: rgba(255, 255, 255, .03);
+    top: 0;
+}
+
+.tmenu:after {
+    background: rgba(255, 255, 255, .05);
+    bottom: -1px;
+}
+
+.tmenu li {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.tmenu .nav-link {
+    padding: 3px 10px !important;
+}
+
+.tmenu .active a {
+    background: #04579d;
+    background: linear-gradient(to right, #04579d 0%, #258387 100%);
+    border-radius: 18px;
+    color: #fff !important;
+    padding: 3px 15px !important;
+}
+
+.tmenu .nav-link span {
+    position: relative;
+}
+
+.tmenu .nav-link span:before {
+    background: #fff;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: .4s;
+    width: 0;
+    height: 1px;
+}
+
+.tmenu .active .nav-link span:before {
+    display: none;
+}
+
+.tmenu .nav-link:hover span:before {
+    width: 100%;
+}
+
+.tmenu-fixed .nav-link span:before {
+    background: #333;
+}
+
+
+.hero {
+    color: #fff;
+    padding: 150px 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 44px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.hero h1 span {
+    background: -webkit-linear-gradient(#2bcda8, #a1dd9d);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero .more-link {
+    padding: 9px 45px 9px 20px;
+    transform: translateZ(0);
+}
+
+.hero span[class^='mouse'],
+.hero span[class*=' mouse'] {
+    display: block;
+    position: absolute;
+}
+
+.hero .mouse {
+    border: 2px solid #fff;
+    border-radius: 14px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .1);
+    right: 20px;
+    top: 10px;
+    width: 15px;
+    height: 25px;
+}
+
+.hero .mouse-wheel {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .1);
+    margin-left: -2px;
+    top: 5px;
+    left: 50%;
+    width: 4px;
+    height: 7px;
+    transform: translateZ(0);
+    animation: m-wheel 2.6s ease-out 0s infinite;
+}
+
+
+@keyframes m-wheel {
+    0% {
+        top: 5px
+    }
+
+    15% {
+        top: 10px;
+    }
+
+    30% {
+        top: 5px;
+    }
+
+    45% {
+        top: 10px;
+    }
+
+    60% {
+        top: 5px;
+    }
+}
+
+header .graph {
+    background: url("../design/hero-graph.png") no-repeat top left fixed;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 555px;
+    animation: graph-draw 1.4s linear 0s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes graph-draw {
+    0% {
+        width: 0
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+
+
+.services {
+    padding: 60px 0;
+}
+
+.services .circ {
+    background: #04579d;
+    background: linear-gradient(45deg, #04579d 0%, #5dc6ca 100%);
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 5px 5px 8px #ddd;
+    color: #fff;
+    display: block;
+    font-size: 52px;
+    line-height: 130px;
+    margin: auto;
+    width: 140px;
+    height: 140px;
+}
+
+.services .circ i {
+    transition: .5s;
+}
+
+.services .col-12:hover .circ i {
+    transform: scale(1.3, 1.3);
+}
+
+.services h3 {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.03rem;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+.services h3 a {
+    color: #585c63;
+}
+
+
+.quote {
+    background: url("../design/quote-bg.jpg") no-repeat center fixed;
+    color: #fff;
+    padding: 60px 0;
+}
+
+.quote blockquote {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 28px;
+}
+
+.quote .circ {
+    border: 3px solid #fff;
+    border-radius: 50%;
+    font-size: 36px;
+    line-height: 77px;
+    margin: auto;
+    margin-bottom: 25px;
+    position: relative;
+    width: 83px;
+    height: 83px;
+}
+
+.quote .circ:before,
+.quote .circ:after {
+    background: url("../design/wings-icon.png") no-repeat;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 12px;
+    width: 48px;
+    height: 38px;
+}
+
+.quote .circ:before {
+    background-position: 0 -38px;
+    left: -46px;
+}
+
+.quote .circ:after {
+    background-position: -48px -38px;
+    right: -46px;
+}
+
+.quote h4 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.quote p {
+    font-size: 16px;
+    margin-bottom: 0;
+}
